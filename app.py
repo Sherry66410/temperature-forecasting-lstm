@@ -34,16 +34,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ── TEMPORARY DEBUG — remove once the artifact-loading issue is fixed ────────
-import os
-st.write("CWD:", os.getcwd())
-st.write("Root files:", os.listdir("."))
-if os.path.exists("model_artifacts"):
-    st.write("model_artifacts contents:", os.listdir("model_artifacts"))
-else:
-    st.write("model_artifacts folder NOT found here")
-# ──────────────────────────────────────────────────────────────────────────────
-
 # ── Constants ─────────────────────────────────────────────────────────────────
 LAT, LON      = 8.5241, 76.9366
 ARTIFACTS_DIR = "model_artifacts"
